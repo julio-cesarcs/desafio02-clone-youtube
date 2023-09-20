@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: grid;
+    grid: "header header" 56px
+    "aside main" 1fr / 240px 1fr;
+    row-gap: 24px;
+}
+
+img{
+    cursor: pointer;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 146px;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+}
+
+.foto{
+    width: 34px;
+    border-radius: 50%
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.item{
+    padding-left: 24px;
+    display:flex;
+    justify-content: flex-start;
+    gap: 24px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.item span{
+    cursor: pointer;
+}
+
+aside img{
+    width: 24px;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 24px
+}
+
+.video{
+    width: 250px;
+
+}
+
+.descricao{
+    display: grid;
+    grid-template: 1fr / 45px 195px;
+    gap: 10px;
+    height: 75px;
+}
+
+.descricao img{
+    align-self: start;
+    justify-self: center;
+    width: 42px;
+    height: 42px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+h1{
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+h2{
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+}
